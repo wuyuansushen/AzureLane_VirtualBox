@@ -48,4 +48,4 @@ dmesg | grep -i vboxdrv
 
 ## 2.1 Go to Genymotion Official Website to Download
 
-?(Download_page)[https://www.genymotion.com/download/]
+Download page is [here](https://www.genymotion.com/download/)
