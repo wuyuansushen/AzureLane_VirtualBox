@@ -56,3 +56,9 @@ Download page is [here](https://www.genymotion.com/download/)
 chmod u+x <Genymotion>.bin
 ./<Genymotion>.bin -d <InstallPath>
 ```
+
+## 3.Install `Android SDK package(adb)`
+
+```
+sudo dnf install android-tools
+```
