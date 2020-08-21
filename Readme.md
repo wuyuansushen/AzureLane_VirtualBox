@@ -45,3 +45,7 @@ dmesg | grep -i vboxdrv
 ```
 
 ## 2.Install Genymotion
+
+## 2.1 Go to Genymotion Official Website to Download
+
+?(Download_page)[https://www.genymotion.com/download/]
