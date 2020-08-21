@@ -49,3 +49,10 @@ dmesg | grep -i vboxdrv
 ## 2.1 Go to Genymotion Official Website to Download
 
 Download page is [here](https://www.genymotion.com/download/)
+
+## 2.2 Run the file and select installation path
+
+```
+chmod u+x <Genymotion>.bin
+./<Genymotion>.bin -d <InstallPath>
+```
