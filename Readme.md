@@ -2,7 +2,7 @@
 
 ## 1.Install *Virtual Box*
 
-## 1.1 Close ***Secure Boot*** in your motherboard.
+## 1.1 Close `Secure Boot` in your motherboard.
 
 ## 1.2 Close ***SELinux***
 
@@ -25,3 +25,9 @@ and set
 SELINUX=permissive
 ```
 in */etc/selinux/config* so that the change will be permanent.
+
+## 1.3 Add `rpmfusion` repository
+
+```
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
