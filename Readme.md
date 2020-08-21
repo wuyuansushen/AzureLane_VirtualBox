@@ -39,4 +39,9 @@ sudo akmods
 sudo systemctl restart systemd-modules-load.service
 ```
 
+you also can check VirtualBox kernel module status:
+```
+dmesg | grep -i vboxdrv
+```
+
 ## 2.Install Genymotion
