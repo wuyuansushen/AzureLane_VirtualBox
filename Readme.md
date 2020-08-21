@@ -31,3 +31,12 @@ in */etc/selinux/config* so that the change will be permanent.
 ```
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
+
+## 1.4 Install VirtualBox and Reload modules
+```
+sudo dnf install VirtualBox kernel-devel-$(uname -r) akmod-VirtualBox
+sudo akmods
+sudo systemctl restart systemd-modules-load.service
+```
+
+## 2.Install Genymotion
