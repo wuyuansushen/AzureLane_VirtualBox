@@ -79,3 +79,7 @@ Also, you need to use an ARM translation tool that matches the Android version o
 ## 5.Install `Google Mobile Service(GMS)`
 
 Click `OpenGApps` button in right menu bar.
+
+## 6.Speed up your Network with `Bridge` Network
+
+## You need to go to `Edit` tab and change `Network mode` to `Bridge` 
