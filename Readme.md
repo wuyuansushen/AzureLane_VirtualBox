@@ -63,6 +63,19 @@ chmod u+x <Genymotion>.bin
 sudo dnf install android-tools
 ```
 
-## 4.Install `Google Mobile Service(GMS)`
+## 4.Install `ARM translation tools`
+
+>Note
+For legal reasons, we cannot provide any ARM translation tools nor links to them. However, you should be able to find them on the Internet.
+
+>Important: 
+If you want to install the application from Google Play Store, you have to install the ARM translation tools **before** installing the OpenGApps package.
+Please note that there are no ARM translation tools for Android 10 for the moment.
+
+You can find ARM_Translation_tools [here](https://github.com/m9rco/Genymotion_ARM_Translation)
+
+Also, you need to use an ARM translation tool that matches the Android version of your instance!
+
+## 5.Install `Google Mobile Service(GMS)`
 
 Click `OpenGApps` button in right menu bar.
