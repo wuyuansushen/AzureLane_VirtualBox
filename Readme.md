@@ -62,3 +62,7 @@ chmod u+x <Genymotion>.bin
 ```
 sudo dnf install android-tools
 ```
+
+## 4.Install `Google Mobile Service(GMS)`
+
+Click `OpenGApps` button in right menu bar.
