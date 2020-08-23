@@ -83,3 +83,10 @@ Click `OpenGApps` button in right menu bar.
 ## 6.Speed up your Network with `Bridge` Network
 
 ## You need to go to `Edit` tab and change `Network mode` to `Bridge` 
+
+## 7.Install `exfat` format filesystem support
+
+```
+dnf -y install fuse-exfat
+dnf -y install exfat-utils
+```
