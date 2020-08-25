@@ -57,11 +57,17 @@ chmod u+x <Genymotion>.bin
 ./<Genymotion>.bin -d <InstallPath>
 ```
 
-## 3.Install `Android SDK package(adb)`
+## 3.Configure `Android Debug Bridge(adb)`
+
+>Gentmotion have installed and use `Genymotion Android Tools(default)` by default.
+
+But your variable **$PATH** haven't included its path, so you need to configre **$PATH** by yourself.
 
 ```
-sudo dnf install android-tools
+export PATH=$PATH:/usr/local/share/applications/genymotion/tools
 ```
+
+You can execute this command in your terminal but it only is valiable this time. You can add it at the end of **~/.bashrc** so that it could be valiable permanent for this user.
 
 ## 4.Increase Internel Storage of Genymotion Device
 
