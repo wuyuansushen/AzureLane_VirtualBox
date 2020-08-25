@@ -63,7 +63,9 @@ chmod u+x <Genymotion>.bin
 sudo dnf install android-tools
 ```
 
-## 4.
+## 4.Increase Internel Storage of Genymotion Device
+
+>Tip: Default size of Genymotion Virtual Device only has 16 GB. 
 
 ## 5.Install `ARM translation tools`
 
