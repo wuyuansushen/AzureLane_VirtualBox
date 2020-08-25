@@ -73,7 +73,11 @@ sudo dnf install android-tools
 
 ## 4.3 Modify properties of `android_data_disk_copy.vdi`, then you could Change *size* and `apply`.
 
-## 4.4 
+## 4.4 Copy `android_data_disk_copy.vdi` to a new `VMDK(Virtual Machine Disk)` type disk image named `android_data_disk_64gb.vdi`.
+
+>Maybe you have increased the physical size of disk,But the filesystem doesn't extend to new size/block.
+
+
 
 ## 5.Install `ARM translation tools`
 
