@@ -85,7 +85,19 @@ sudo dnf install android-tools
 
 4.2.1 New a Virtual Machine and set memory size.
 
-4.2.2 Remember to choose **Use an existing virtual hard disk file** and set 
+4.2.2 Remember to choose **Use an existing virtual hard disk file** and set `android_data_disk_64gb.vdi(Normal,64.00GB)` to create.
+
+4.2.3 Go to `Settings--Storage--Controller:IDE--Optical Drive` and choose your **iso** file.
+
+4.2.4 Open the Virtual Machine and use Live System without Installing it.
+
+4.2.5 Do blow commands
+
+```
+sudo passwd       #Configure root user password
+su -              #Login in root user with password which you configured just now.
+lsblk -pa         #Parameters means "all" and "path" and help you find which device needed to modify filesystem size
+```
 
 ## 5.Install `ARM translation tools`
 
