@@ -67,17 +67,25 @@ sudo dnf install android-tools
 
 >Tip: Default size of Genymotion Virtual Device only has 16 GB. 
 
-## 4.1 In `Oracle VM VirtualBox Manager`,you need to go to `Tools(Top of menu)--Media(Click rightest button of Tools Tab)`
+## 4.1 Increase physical disk size.
 
-## 4.2 Copy `android_data_disk.vmdk` to a new `VDI(VirtualBox Disk Image)` type disk image named `android_data_disk_copy.vdi`.
+4.1.1 In `Oracle VM VirtualBox Manager`,you need to go to `Tools(Top of menu)--Media(Click rightest button of Tools Tab)`
 
-## 4.3 Modify properties of `android_data_disk_copy.vdi`, then you could Change *size* and `apply`.
+4.1.2 Copy `android_data_disk.vmdk` to a new `VDI(VirtualBox Disk Image)` type disk image named `android_data_disk_copy.vdi`.
 
-## 4.4 Copy `android_data_disk_copy.vdi` to a new `VMDK(Virtual Machine Disk)` type disk image named `android_data_disk_64gb.vdi`.
+4.1.3 Modify properties of `android_data_disk_copy.vdi`, then you could Change *size* and `apply`.
 
->Maybe you have increased the physical size of disk,But the filesystem doesn't extend to new size/block.
+4.1.4 Copy `android_data_disk_copy.vdi` to a new `VMDK(Virtual Machine Disk)` type disk image named `android_data_disk_64gb.vdi`.
 
+>Maybe you have increased the physical size of disk,But the filesystem doesn't extend to new size/block. You need to mount this new disk to other virtual machine system so that you can modify the filesystem.
 
+## 4.2 Use `Live system` of *iso* file to increase filesystem size.
+
+>Tip: Advise to use **Ubuntu** iso file to use Live system. 
+
+4.2.1 New a Virtual Machine and set memory size.
+
+4.2.2 Remember to choose **Use an existing virtual hard disk file** and set 
 
 ## 5.Install `ARM translation tools`
 
