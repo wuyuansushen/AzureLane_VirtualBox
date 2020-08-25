@@ -63,7 +63,9 @@ chmod u+x <Genymotion>.bin
 sudo dnf install android-tools
 ```
 
-## 4.Install `ARM translation tools`
+## 4.
+
+## 5.Install `ARM translation tools`
 
 >Note
 For legal reasons, we cannot provide any ARM translation tools nor links to them. However, you should be able to find them on the Internet.
@@ -76,22 +78,22 @@ You can find ARM_Translation_tools [here](https://github.com/m9rco/Genymotion_AR
 
 Also, you need to use an ARM translation tool that matches the Android version of your instance!
 
-## 5.Install `Google Mobile Service(GMS)`
+## 6.Install `Google Mobile Service(GMS)`
 
 Click `OpenGApps` button in right menu bar.
 
-## 6.Speed up your Network with `Bridge` Network
+## 7.Speed up your Network with `Bridge` Network
 
 ## You need to go to `Edit` tab and change `Network mode` to `Bridge` 
 
-## 7.Install `exfat` format filesystem support
+## 8.Install `exfat` format filesystem support
 
 ```
 dnf -y install fuse-exfat
 dnf -y install exfat-utils
 ```
 
-## 8.Unlock `BitLocker` of Windows 10
+## 9.Unlock `BitLocker` of Windows 10
 
 Open **Windows Explorer** and *right-click* on the **BitLocker encrypted drive**, and then choose **Unlock Drive** from the context menu.
 >Tips:You maybe need to wait for a long time to finish decrypt operation.
