@@ -67,6 +67,14 @@ sudo dnf install android-tools
 
 >Tip: Default size of Genymotion Virtual Device only has 16 GB. 
 
+## 4.1 In `Oracle VM VirtualBox Manager`,you need to go to `Tools(Top of menu)--Media(Click rightest button of Tools Tab)`
+
+## 4.2 Copy `android_data_disk.vmdk` to a new `VDI(VirtualBox Disk Image)` type disk image named `android_data_disk_copy.vdi`.
+
+## 4.3 Modify properties of `android_data_disk_copy.vdi`, then you could Change *size* and `apply`.
+
+## 4.4 
+
 ## 5.Install `ARM translation tools`
 
 >Note
