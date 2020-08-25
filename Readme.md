@@ -145,3 +145,9 @@ dnf -y install exfat-utils
 
 Open **Windows Explorer** and *right-click* on the **BitLocker encrypted drive**, and then choose **Unlock Drive** from the context menu.
 >Tips:You maybe need to wait for a long time to finish decrypt operation.
+
+## 10.Install python_script support (With socks5 proxy)
+
+```
+python3 -m pip install opencv-python --proxy socks5:[HostIP]:[portNumber] --user
+```
