@@ -69,11 +69,11 @@ sudo dnf install android-tools
 
 ## 4.1 Increase physical disk size.
 
-4.1.1 In `Oracle VM VirtualBox Manager`,you need to go to `Tools(Top of menu)--Media(Click rightest button of Tools Tab)`
+4.1.1 In **Oracle VM VirtualBox Manager**,you need to go to **Tools(Top of menu)--Media(Click rightest button of Tools Tab)**.
 
-4.1.2 Copy `android_data_disk.vmdk` to a new `VDI(VirtualBox Disk Image)` type disk image named `android_data_disk_copy.vdi`.
+4.1.2 Copy **android_data_disk.vmdk** to a new **VDI(VirtualBox Disk Image)** type disk image named **android_data_disk_copy.vdi**.
 
-4.1.3 Modify properties of `android_data_disk_copy.vdi`, then you could Change *size* and `apply`.
+4.1.3 Modify properties of **android_data_disk_copy.vdi**, then you could Change *size* and *apply*.
 
 4.1.4 Copy `android_data_disk_copy.vdi` to a new `VMDK(Virtual Machine Disk)` type disk image named `android_data_disk_64gb.vdi`.
 
@@ -98,6 +98,14 @@ sudo passwd       #Configure root user password
 su -              #Login in root user with password which you configured just now.
 lsblk -pa         #Parameters means "all" and "path" and help you find which device needed to modify filesystem size
 ```
+
+>Tip: Genymotion file system is ext file system.android_data_disk_64gb.vdi is usually in **/dev/sda3**
+
+```
+resize2fs /dev/sda3 <custom>G
+```
+
+4.2.6 In `Oracle VM VirtualBox Manager`,you need to go to `<GenymotionPhoneVirtualMachine>--Settings--Storage`. You need to **Remove Attachment** named **android_data_disk.vmdk** and then **Adds hard disk** named **android_data_disk_64gb.vdi** and apply it.
 
 ## 5.Install `ARM translation tools`
 
